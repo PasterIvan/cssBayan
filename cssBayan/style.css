@@ -6,8 +6,12 @@ main {
     padding: 0;
     width: 100%;
 }
+
 .list:hover .icon {
     display: block;
+}
+.list:hover .listItemTitle {
+    color: black;
 }
 .listItem {
     display: block;
@@ -15,6 +19,26 @@ main {
     justify-content: center;
     border-top: 0.1rem solid #8f8f8f;
 }
+
+.button {
+    border: none;
+    background: none;
+    width: 100%;
+}
+.button:hover {
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none;
+}
+.button:focus .imgMem{
+    display: block;
+}
+.button:focus .listItemTitle {
+    color: black;
+}
+
 .listItem:hover .imgMem {
     display: block;
 }
@@ -23,15 +47,15 @@ main {
     display: flex;
     justify-content: space-between;
 }
-.listItemTitle {
 
+.listItemTitle {
+    color: blue;
 }
 .icon {
     display: none;
     background-color: blueviolet;
     width: 2rem;
     height: 2rem;
-    margin: 1rem;
 }
 
 .imgMem {
