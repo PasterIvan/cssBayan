@@ -2,6 +2,10 @@ body {
     background-color: rgba(152, 163, 201, 0.58);
 
 }
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
 .main {
     width: 50%;
     margin: 0 auto;
@@ -67,6 +71,7 @@ body {
 }
 
 .listItemTitle {
+    font-size: 1.5rem;
     color: #1d1db6;
 }
 .icon {
@@ -77,6 +82,7 @@ body {
     border-width: 0 .3rem .3rem 0;
     padding: 3px;
     transform: rotate(45deg);
+    transition: .5s;
 }
 
 .imgMem {
@@ -85,16 +91,37 @@ body {
     margin: 0 auto;
     transition: 1s;
 }
-.imgMem img {
-    width: 100%;
-}
 @media (max-width: 820px) {
+    h1 {
+        font-size: 1.7rem;
+    }
     .main {
         width: 80%;
     }
+    .button:focus .imgMem {
+        width: 70%;
+    }
+    .listItem:hover .imgMem {
+        width: 70%;
+    }
+    .listItemTitle {
+        font-size: 1.2rem;
+    }
 }
 @media (max-width: 320px) {
+    h1 {
+        font-size: 1.5rem;
+    }
     .main {
         width: 100%;
+    }
+    .button:focus .imgMem {
+        width: 90%;
+    }
+    .listItem:hover .imgMem {
+        width: 90%;
+    }
+    .listItemTitle {
+        font-size: 1rem;
     }
 }
