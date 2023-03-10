@@ -1,0 +1,44 @@
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+.list {
+    padding: 0;
+    width: 100%;
+}
+.list:hover .icon {
+    display: block;
+}
+.listItem {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    border-top: 0.1rem solid #8f8f8f;
+}
+.listItem:hover .imgMem {
+    display: block;
+}
+
+.headItem{
+    display: flex;
+    justify-content: space-between;
+}
+.listItemTitle {
+
+}
+.icon {
+    display: none;
+    background-color: blueviolet;
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+}
+
+.imgMem {
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+}
+.imgMem img {
+    width: 100%;
+}
