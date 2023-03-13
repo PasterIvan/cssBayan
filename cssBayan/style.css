@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(220, 220, 220, 0.58);
+}
+h1 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.main {
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    border: 0.1rem solid #8f8f8f;
+    background-color: white;
+    box-shadow: .3rem .3rem .7rem darkslateblue;
+}
+.list {
+    padding: 0;
+    width: 100%;
+}
+input {
+    display: none;
+}
+.listItem {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    border-top: 0.1rem solid #8f8f8f;
+}
+.listItem:active {
+    opacity: .5;
+}
+.listItem:active .button .listItemTitle,
+.listItem:active .button .icon {
+    color: #4545ef;
+    border-color: #4545ef;
+}
+.headItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+
+}
+.button {
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+input:checked + label .imgMem {
+    width: 50%;
+}
+
+input:checked + label  .icon {
+    transform: rotate(-135deg);
+    transition: .5s;
+}
+
+input:checked + label .listItemTitle {
+    color: black;
+}
+
+input:checked + label .imgMem {
+    width: 90%;
+    padding-bottom: 1rem;
+    transition: .5s;
+}
+
+.listItemTitle {
+    font-size: 1rem;
+}
+.icon {
+    display: block;
+    width: .1rem;
+    height: .1rem;
+    border: solid black;
+    border-width: 0 .1rem .1rem 0;
+    padding: .1rem;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.imgMem {
+    display: block;
+    width: 0;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+@media (min-width: 480px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+    .main {
+        width: 70%;
+    }
+    .icon {
+         width: .2rem;
+         height: .2rem;
+         border-width: 0 .2rem .2rem 0;
+    }
+
+    input:checked + label .imgMem {
+        width: 70%;
+    }
+    .listItemTitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .main {
+        width: 40%;
+    }
+
+    .list:hover .icon {
+        display: block;
+    }
+    .list:hover .listItemTitle {
+        color: black;
+    }
+
+    .button:hover {
+        cursor: pointer;
+    }
+
+    .listItem:hover .imgMem {
+        width: 50%;
+        padding-bottom: 1rem;
+        transition: .5s;
+    }
+    input:checked + label .imgMem {
+        width: 50%;
+    }
+    .listItem:hover .icon {
+        transform: rotate(-135deg);
+        transition: .5s;
+    }
+
+    .listItemTitle {
+        font-size: 1.5rem;
+        color: #4545ef;
+    }
+    .icon {
+        display: none;
+        width: .3rem;
+        height: .3rem;
+        border-width: 0 .3rem .3rem 0;
+    }
+}
