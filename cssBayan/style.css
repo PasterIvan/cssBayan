@@ -124,6 +124,19 @@ input:checked + label .imgMem {
         width: 40%;
     }
 
+    .listItemTitle {
+        font-size: 1.5rem;
+        color: #4545ef;
+    }
+    .icon {
+        display: none;
+        width: .3rem;
+        height: .3rem;
+        border-width: 0 .3rem .3rem 0;
+    }
+}
+
+@media (hover: hover) {
     .list:hover .icon {
         display: block;
     }
@@ -146,17 +159,6 @@ input:checked + label .imgMem {
     .listItem:hover .icon {
         transform: rotate(-135deg);
         transition: .5s;
-    }
-
-    .listItemTitle {
-        font-size: 1.5rem;
-        color: #4545ef;
-    }
-    .icon {
-        display: none;
-        width: .3rem;
-        height: .3rem;
-        border-width: 0 .3rem .3rem 0;
     }
 }
 
